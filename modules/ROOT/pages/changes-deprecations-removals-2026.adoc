@@ -41,3 +41,9 @@ For details, refer to xref:cypher-shell.adoc[].
 Neo4j 2026.01::
 
 A new parameter `--debug` is added as an alias for the `--log` option.
+
+=== Cypher default version
+
+Starting from Neo4j 2026.02, the distributed _neo4j.conf_ *explicitly sets* `db.query.default_language=CYPHER_25`.
+As a result, new deployments using the provided configuration file default to Cypher 25 for newly created databases.
+For details, see xref:configuration/cypher-version-configuration.adoc[Configure the Cypher default version].
